@@ -1,0 +1,59 @@
+#Exercise 1
+class Stack
+    attr_reader :ivar
+
+    def initialize
+        @ivar = []
+      # create ivar to store stack here!
+    end
+
+    def push(el)
+        @ivar.push(el)
+      # adds an element to the stack
+    end
+
+    def pop
+        @ivar.pop
+      # removes one element from the stack
+    end
+
+    def peek
+        @ivar.last
+      # returns, but doesn't remove, the top element in the stack
+    end
+  end
+
+#Exercise 2
+class Queue
+    attr_reader :line
+
+    def initialize
+        @line = []
+    end
+
+    def enqueue(el)
+        line.push(el)
+    end
+
+    def dequeue
+        line.shift
+    end
+
+    def peek
+        line.first
+    end
+end
+
+#Exercise 3
+#don't really understand the material, hopfully can get more information during class on W3D5
+class Map
+    attr_reader :arr
+
+    def initialize
+        @arr = []
+    end
+
+    def set(key, value)
+
+    end
+end

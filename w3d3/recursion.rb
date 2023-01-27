@@ -62,3 +62,11 @@ end
 # p reverse("q") # => "q"
 # p reverse("id") # => "di"
 # p reverse("") # => ""
+
+def range(str1, str2)
+    return [] if str2 < str1
+    return [str1] if str2 == str1
+
+    arr = []
+    arr << range(str1, str2 - 1)
+end
