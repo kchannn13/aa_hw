@@ -54,6 +54,21 @@ class Map
     end
 
     def set(key, value)
+      arr.each do |sub|
+        if sub.first == key
+          arr << [sub.first, value]
+        end
+    end
+
+    def get(key)
+
+    end
+
+    def delete(key)
+
+    end
+
+    def show
 
     end
 end
