@@ -13,7 +13,8 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=London,UK&appid=bcb83c4
             throw response;
         }
     })
-    .then(console.log("Success"))
+    // .then(console.log("Success"))
+    .then(post => console.log(post))
     .catch(error => console.error(error));
 
 
